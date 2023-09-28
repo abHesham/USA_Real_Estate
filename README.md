@@ -1,6 +1,6 @@
 # USA_Real_Estate
 machine learning project for price prediction about real estate in the US 
-The dataset has 1 CSV file with 10 columns -
+There are 2 datasets each with 1 CSV file
 
 # Uncleaned dataset:
 real_estate_USA.csv (100k+ entries)
