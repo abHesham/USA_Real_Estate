@@ -14,8 +14,8 @@ house_size (house area/size/living space in square feet)
 prev_sold_date (Previously sold date)
 price (Housing price, it is either the current listing price or recently sold price if the house is sold recently)
 
-Cleaned Dataset:
-#clean_realestate_USA.csv ... for simple use of Pipeline function  
+# Cleaned Dataset:
+clean_realestate_USA.csv ... for simple use of Pipeline function  
 
 # Disclaimer:
-#The data and information in the data set provided here are intended to use for educational purposes only. I do not own any data, and all rights are reserved to the respective owners.
+The data and information in the data set provided here are intended to use for educational purposes only. I do not own any data, and all rights are reserved to the respective owners.
