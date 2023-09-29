@@ -4,7 +4,11 @@ import pandas as pd
 import streamlit as st
 import joblib
 
-df1 = pd.read_csv("clean_realestate_USA.csv")
+states = ['Puerto Rico', 'Virgin Islands', 'Massachusetts', 'Connecticut',
+       'New Hampshire', 'Vermont', 'New Jersey', 'New York',
+       'Rhode Island', 'Maine', 'Pennsylvania', 'Delaware']
+price_category = ['Affordable', 'Moderate', 'Luxury']
+new = ['yes', 'no']
 
 model = joblib.load('model.pkl')
 inputs = joblib.load('inputs.pkl')
@@ -29,11 +33,11 @@ def main():
     bedrooms = st.sidebar.slider('bedrooms',1, 15)
     bathrooms = st.sidebar.slider('bathrooms',1, 15)
     land_area_in_acres = st.sidebar.slider('land_area_in_acres',0.1, 18.0)
-    state = st.sidebar.selectbox('state', df1['state'].unique().tolist())
+    state = st.sidebar.selectbox('state', states)
     housearea_sqft = st.sidebar.slider('housearea_sqft',100, 4000)
     price_per_sqft = st.sidebar.slider('price_per_sqft',13, 6150)
-    Price_Category = st.sidebar.selectbox('Price_Category', df1['Price_Category'].unique().tolist())
-    Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', df1['Not Brand New'].unique().tolist())
+    Price_Category = st.sidebar.selectbox('Price_Category', price_category)
+    Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', new)
 
     if st.button('Prediction'):
         results = prediction(bedrooms,bathrooms,land_area_in_acre,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
