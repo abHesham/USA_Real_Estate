@@ -10,7 +10,7 @@ model = joblib.load('model.h5')
 inputs = joblib.load('inputs.h5')
 
 
-def prediction(bedrooms,bathrooms,land_area_in_acre,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New):
+def prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New):
     test_df = pd.DataFrame(columns=inputs)
     test_df.at[0, 'bedrooms'] = bedrooms
     test_df.at[0, 'bathrooms'] = bathrooms
