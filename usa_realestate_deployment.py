@@ -36,7 +36,7 @@ def main():
     Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', df1['Not Brand New'].unique().tolist())
 
     if st.button('Prediction'):
-        results = prediction(bedrooms,bathrooms,land_area_in_acre,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
+        results = prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
         st.text(f'Predicted House Price: {round(results, 2)}')
 
 if __name__=='__main__':
