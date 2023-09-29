@@ -6,8 +6,8 @@ import joblib
 
 df1 = pd.read_csv("clean_realestate_USA.csv")
 
-model = joblib.load('model.h5')
-inputs = joblib.load('inputs.h5')
+model = joblib.load('model.pkl')
+inputs = joblib.load('inputs.pkl')
 
 
 def prediction(bedrooms,bathrooms,land_area_in_acre,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New):
