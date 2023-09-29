@@ -33,7 +33,7 @@ def main():
     housearea_sqft = st.sidebar.slider('housearea_sqft',100, 4000)
     price_per_sqft = st.sidebar.slider('price_per_sqft',13, 6150)
     Price_Category = st.sidebar.selectbox('Price_Category', df1['Price_Category'].unique().tolist())
-    Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', df1['Not Brand New'].unique().tolist()])
+    Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', df1['Not Brand New'].unique().tolist())
 
     if st.button('Prediction'):
         results = prediction(bedrooms,bathrooms,land_area_in_acre,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
