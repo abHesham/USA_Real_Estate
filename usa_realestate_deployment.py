@@ -35,7 +35,7 @@ def prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_
 
 
 def main():
-
+    st.markdown("<h1 style='text-align: center; color: white;'>US House_Prices Predictor</h1>", unsafe_allow_html=True)
     bedrooms = st.slider('bedrooms',1, 15)
     bathrooms = st.slider('bathrooms',1, 15)
     land_area_in_acres = st.slider('land_area_in_acres',0.1, 18.0)
