@@ -27,9 +27,9 @@ clean_realestate_USA.csv
 
 # Machine Learning Techniques:
 To achieve our goal, we employ a variety of machine learning techniques, including but not limited to:
-Regression Models: Linear regression, decision tree regression, random forest regression and more to model the relationship between features and property prices.
-Data Preprocessing: Data cleaning, feature engineering, and normalization to ensure high-quality input for our models.
-Model Evaluation: Rigorous evaluation using metrics like mean absolute error (MAE), mean squared error (MSE), and R-squared to assess model performance.
+- Regression Models: Linear regression, decision tree regression, random forest regression and more to model the relationship between features and property prices.
+- Data Preprocessing: Data cleaning, feature engineering, and normalization to ensure high-quality input for our models.
+- Model Evaluation: Rigorous evaluation using metrics like mean absolute error (MAE), mean squared error (MSE), and R-squared to assess model performance.
 
 
 # Disclaimer:
