@@ -1,4 +1,4 @@
-# USA_Real_Estate
+# US_Real_Estate
 machine learning project for price prediction about real estate in the US 
 There are 2 datasets each with 1 CSV file
 
