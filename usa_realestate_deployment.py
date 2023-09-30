@@ -36,14 +36,14 @@ def prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_
 
 def main():
 
-    bedrooms = st.sidebar.slider('bedrooms',1, 15)
-    bathrooms = st.sidebar.slider('bathrooms',1, 15)
-    land_area_in_acres = st.sidebar.slider('land_area_in_acres',0.1, 18.0)
-    state = st.sidebar.selectbox('state', states)
-    housearea_sqft = st.sidebar.slider('housearea_sqft',100, 4000)
-    price_per_sqft = st.sidebar.slider('price_per_sqft',13, 6150)
-    Price_Category = st.sidebar.selectbox('Price_Category', price_category)
-    Not_Brand_New = st.sidebar.selectbox('Not_Brand_New', new)
+    bedrooms = st.slider('bedrooms',1, 15)
+    bathrooms = st.slider('bathrooms',1, 15)
+    land_area_in_acres = st.slider('land_area_in_acres',0.1, 18.0)
+    state = st.selectbox('state', states)
+    housearea_sqft = st.slider('housearea_sqft',100, 4000)
+    price_per_sqft = st.slider('price_per_sqft',13, 6150)
+    Price_Category = st.selectbox('Price_Category', price_category)
+    Not_Brand_New = st.selectbox('Not_Brand_New', new)
 
     if st.button('Prediction'):
         results = prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
