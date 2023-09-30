@@ -47,7 +47,7 @@ def main():
 
     if st.button('Prediction'):
         results = prediction(bedrooms,bathrooms,land_area_in_acres,state,housearea_sqft,price_per_sqft,Price_Category, Not_Brand_New)
-        st.text(f'Predicted House Price: {results}')
+        st.text(f'Predicted House Price: {results} USD')
 
 if __name__=='__main__':
     main() 
